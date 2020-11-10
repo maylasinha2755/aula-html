@@ -1,0 +1,206 @@
+<!-- DOCTYPE não é uma tag do html - serve para indicar ao navegador qual a versão do HTML utilizada no arquivo -->
+<!DOCTYPE html>
+<!-- todo documento HTML começa com esssa declaração -->
+<!-- html - Início do documento HTML -->
+<!-- lang - Indica que o conteúdo contido dentro do html está escrito em um determinado idioma -->
+<html lang="pt-br">
+<!-- head - a tag head serve para armazenar informações de uma página de seu site -->
+
+<!-- abertura d tag <head> em geral aqui vai todas as informações que seu navegador precisa
+    a respeito de seu site para executar seu documento -->
+
+<head>
+    <title>Minha Página Inicial</title>
+    <!-- title - título de seu documento(página) HTML -->
+
+    <!-- A tag <link> define um link entre um documento e um recurso externo.
+            A tag <link> é usada para vincular as folhas de estilos. -->
+    <!-- Eu costumo criar um arquivo chamado main.css e chamo ele em todas as páginas de meu site
+        Este arquivo serve estilizar e padronizar tudo aquilo que é comum entre todas as páginas. -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Para exibir uma página HTML corretamente, um navegador da web deve conhecer o conjunto de caracteres usado na página. -->
+    <meta charset="UTF-8" />
+    <!-- Algumas tags no HTML tem abertura, mas não tem fechamento,
+    Costumamos dizer que ela fecha com ela mesma é o caso das TAG <link> e <meta>,
+    não significa que sejam somente elas existem outras -->
+</head>
+<!-- fechamento da tag </head> -->
+
+<!-- A tag body é parte visível, é o que aparece no navegador,
+Contém todo o conteúdo de um documento HTML. -->
+<!-- abertura tag <body> -->
+
+<body>
+    <!-- abertura do cabeçalho de nosso site -->
+    <header class="header-top">
+        <div class="container">
+            <div class="background-header"></div>
+            <!-- Menu de navegação de nosso site -->
+            <nav class="nav-menu">
+                <!-- lista de itens que compõe o nosso menu -->
+                <ul class="list">
+                    <!-- item 1 da lista do menu -->
+                    <li class="list-item"><a href="index.html">Home</a></li>
+                    <!-- item 2 da lista do menu -->
+                    <li class="list-item"><a href="marketing.html">Marketing</a></li>
+                    <!-- item 3 da lista do menu -->
+                    <li class="list-item"><a href="internet.html">Internet</a></li>
+                    <!-- item 4 da lista do menu -->
+                    <li class="list-item"><a href="ganhar-dinheiro.html">Ganhar Dinheiro</a></li>
+                    <!-- item 5 da lista do menu -->
+                    <li class="list-item"><a href="web-master.html">WebMaster</a></li>
+                    <!-- item 6 da lista do menu -->
+                    <li class="list-item"><a href="scripts.html">Scripts</a></li>
+                    <!-- item 7 da lista do menu -->
+                    <li class="list-item"><a href="software.html">Software</a></li>
+                    <!-- item 8 da lista do menu -->
+                    <li class="list-item"><a href="comercio-eletronico.html">Comércio Eletrônico</a></li>
+                    <!-- item 9 da lista do menu -->
+                    <li class="list-item"><a href="downloads.html">Downloads</a></li>
+                    <!-- item 10 da lista do menu -->
+                    <li class="list-item"><a href="contato.html">Contato</a></li>
+                    <!-- item 11 da lista do menu -->
+                    <li class="list-item"><a onclick="window.print()">Imprimir</a></li>
+                </ul>
+                <!-- lista de itens que compõe o nosso menu -->
+            </nav>
+            <!-- Menu de navegação de nosso site -->
+        </div>
+    </header>
+    <!-- fechamento do cabeçalho de nosso site -->
+    <section class="col-left-right">
+        <div class="container">
+            <!-- Abertura da coluna da esquerda -->
+            <div class="col-left">
+                <article class="destaque">
+                    <div class="bg-black">
+                        <h2 class="title">DESTAQUES</h2>
+                    </div>
+                    <div class="body-destaque">
+                        <div class="w-25 float-left">
+                            <figure>
+                                <img src="assets/images/fundo-pintado-de-cinza.jpg" />
+                            </figure>
+                        </div>
+                        <div class="w-75 float-right title p-0">
+                            <h3>Montando layout com CSS</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tempor arcu. Donec interdum eget velit ut euismod. Ut lacinia massa libero, eu iaculis sapien pretium id. Ut nec ornare velit. Nam ullamcorper non mi ac tristique. Nam interdum, mi a vehicula
+                                euismod, ex nibh euismod tortor, ac mollis arcu nisi nec nisl. Proin id ligula sed arcu ultrices laoreet.</p>
+                            <button type="button" class="btn-leia-mais float-right">LEIA MAIS</button>
+                        </div>
+                    </div>
+                </article>
+                <div class="w-50 float-left">
+                    <article class="programacao">
+                        <div class="bg-black">
+                            <h3 class="title">PROGRAMAÇÃO</h3>
+                        </div>
+                        <div class="body">
+                            <h3>Artigo em destaque</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tempor arcu. Donec interdum eget velit ut euismod. Ut lacinia massa libero, eu iaculis sapien pretium id. Ut nec ornare velit. </p>
+                            <button type="button" class="btn-leia-mais float-right">LEIA MAIS</button>
+                        </div>
+                        <div class="mais-artigos">
+                            <div class="bg-black">
+                                <h4 class="title">MAIS ARTIGOS</h4>
+                            </div>
+                            <div class="body">
+                                <ul>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="w-50 float-right">
+                    <article class="webdesign">
+                        <div class="bg-black">
+                            <h3 class="title">WEBDESIGN</h3>
+                        </div>
+                        <div class="body">
+                            <h3>Artigo em destaque</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tempor arcu. Donec interdum eget velit ut euismod. Ut lacinia massa libero, eu iaculis sapien pretium id. Ut nec ornare velit. </p>
+                            <button type="button" class="btn-leia-mais float-right">LEIA MAIS</button>
+                        </div>
+                        <div class="mais-artigos">
+                            <div class="bg-black">
+                                <h4 class="title">MAIS ARTIGOS</h4>
+                            </div>
+                            <div class="body">
+                                <ul>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Lorem impsum amet</li>
+                                    <li>Donec ac elit</li>
+                                    <li>Lorem impsum amet</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Fechamento da coluna da esquerda -->
+            <!-- Abertura da coluna da direita -->
+            <div class="col-right">
+                <article class="mais-lidos">
+                    <input type="search" name="pesquisa" id="pesquisa" class="campo-pesquisa" placeholder="Digite o termo e pressione enter" />
+                    <div class="bg-black">
+                        <h2 class="title">MAIS LIDOS</h2>
+                        <div class="body-mais-lidos">
+                            <ul>
+                                <li>Donec ac elit</li>
+                                <li>Lorem impsum amet</li>
+                                <li>Donec ac elit</li>
+                                <li>Lorem impsum amet</li>
+                                <li>Lorem impsum amet</li>
+                                <li>Donec ac elit</li>
+                                <li>Lorem impsum amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <figure class="w-50 float-left">
+                            <img src="assets/images/html5.png" />
+                        </figure>
+                        <figure class="w-50 float-left">
+                            <img src="assets/images/css.png" />
+                        </figure>
+                        <figure class="w-50 float-left">
+                            <img src="assets/images/js.jpg" />
+                        </figure>
+                        <figure class="w-50 float-left">
+                            <img src="assets/images/bootstrap.png" />
+                        </figure>
+                    </div>
+                </article>
+            </div>
+            <!-- Fechamento da coluna da direita -->
+        </div>
+    </section>
+    <!-- Rodapé do site -->
+    <footer class="footer">
+        <div class="container">
+            <p>WebMaster</p>
+        </div>
+    </footer>
+    <!-- Rodapé do site -->
+    <!-- A tag <script> ela pode ser declarada em qualquer ponto de nosso documento,
+        Tanto nas tags <head> e <body>, 
+        Porém nós desenvolvedores temos como uma boa prática colocar ela sempre no final do </body>
+        Assim, sempre teremos a certeza de que o arquivo será renderizado primeiro sem os
+        Bloqueios de renderização, já que o browser sempre dará prioridade de leitura para a tag <script> -->
+    <script src="assets/libs/js/jquery-3.4.1.min.js"></script>
+</body>
+<!-- Fechamento da tag <body> -->
+
+</html>
+<!-- html - Fechamento do documento HTML -->
