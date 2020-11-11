@@ -2,64 +2,85 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Primeiro Documento HTML</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-
-
-    <header class="topo">
-        <div class="row">
+    <!-- representação da minha linha do topo 1º linha-->
+    <div class="topo">
+        <div class="row-topo">
             <div class="w-40">
-                <div class="logomarca"> <span>Simple</span><strong>You</strong>
-                </div>
+                <div class="bg-logomarca"><span>Simple</span><strong>Your<strong></div>
             </div>
             <div class="w-60">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="services.html">
-                                Services</a>
-                        </li>
-                        <li><a href="gallery.html">
-                                Gallery</a>
-                        </li>
-                        <li><a href="company.html">
-                                Company</a>
-                        </li>
-                        <li><a href="contact.html">
-                                Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <ol>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="galery.html">Galery</a></li>
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ol>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- representação da minha segunda linha -->
+    <div class="img-destaque">
+        <div class="esquerda">
+            <!-- Meu paragráfo <p> -->
+            <p>teste 2</p>
+            <p>teste 1</p>
+            linha da esquerda
+        </div>
+        <div class="direita">
+            <p>teste 1</p>
+            <p>teste 2</p>
+            linha da direita
+        </div>
+    </div>
 
-    <section class="img-destaque">
-        <article class="esquerda">
-            <p>conteudo esquerda</p>
-        </article>
-        <article class="direita">
-            <p>conteudo direita</p>
-        </article>
-    </section>
-    <section class="conteudo">
-        <article class="w-60">
-            bloco esquerda
-        </article>
-        <article class="w-40">
+    <!-- Representação da 3º linha  -->
+    <div class="conteudo">
+        <!-- blocos filho da linha -->
+        <div class="w-60">
+            bloco da esquerda
+        </div>
+        <!-- blocos filho da linha -->
+        <div class="w-40">
             bloco direita
-        </article>
-    </section>
-    <footer class="rodape">
-        <p>bloco rodape</p>
-    </footer>
-
-
+        </div>
+    </div>
+    <!-- Representação da minha 4º linha -->
+    <div class="rodape">
+        <div class="col-5"><ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            
+            
+        </ul></div>     
+        <div class="col-5"><ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul></div>
+        <div class="col-5"><ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+    </ul></div>
+        <div class="col-5"><ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+    </ul></div>
+        <div class="col-5"><ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+    </ul></div>
+        
+    </div>
 </body>
 
 </html>
